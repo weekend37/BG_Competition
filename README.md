@@ -26,7 +26,7 @@ When there is only one possible move and the same number appears on both dice, i
 
 ## Backgammon/Backgammon.py
 
-## The board interpretation
+### The board interpretation
 The game is set up in the **Backgammon.py** file. To play a game, simply run the program.
 The two players are defined as player 1 and player -1.
 The board has 29 positions:
@@ -43,7 +43,7 @@ few examples:
 - `board[21] = -10` means that player -1 has 10 pieces on the 21st position of the board.
 - `board[28] = -2` would mean that player -1 has beared off two pieces.
 
-## Moving the pieces
+### Moving the pieces
 The game is played between agents. Your main agent should be coded and trained in the **agent.py** file.
 When the Backgammon.py program is executed, it imports your agent and uses his decisions to make moves.
 The moves are simple. They are written as lists of two numbers where the 
@@ -62,12 +62,12 @@ example:
 to make the following move: http://www.bkgm.com/faq/gif/pickandpass.gif
 the agent of player 1 has to return the list ```[(10,5),(5,3)] ```
 
-## Thoughts and advices
-### Running time
+### Thoughts and advices
+#### Running time
 running time for one game is ~55ms per game or just under a minute per 1000 games when the players are only random agents that are not training. When training your agents, you might want to think cautiously about the time complexity of your code. Feel free to make your own faster code of Backgammon (and then share it!) but make sure your agents will be integrable for this version.
-### Different perspectives
+#### Different perspectives
 Your players have to be able to both play as player 1 and player -1. For this to be possible you can either 
   - flip the board and always make your player feel like player one. The code has already been made in the file **flipped_agent.py**.  There you can find the functions *flip_board* and *flip_move* as well as an example of an agent that uses them correctly.
   - account for both cases (as the moves will be different for the different players). Note that the training time will be twice as much as for the other option.
-### Cheating
+#### Cheating
 To save running time, the coded game doesn't check if your player is cheating. Because of that, you have to be careful that your player isn't doing so (e.g. accidentally making 7 moves instead of 2 or maybe moving his piece from the starting position to the end position and therefore always beating his opponents). The moves from the agents will be checked before they are submitted in the final tournament.
