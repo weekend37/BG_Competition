@@ -1,5 +1,30 @@
-# Backgammon
-Backgammon interface for the 2nd and 3rd computational assignments in Computational Intelligence.
+# Backgammon Competition
+A messy directory including the Backgammon Tournament that was played between self-tought players, developed by students in the course Computational Intelligence.
+
+## Running the tournament
+
+The tournament is played out in **BG_Competition.py**. You'll find that the competing agents are imported at the top and their action functions defined and used in the main function.
+
+All the necessary files of the agents are stored in the directory, making it quite messy.
+
+## Visualizing the games
+
+To visualize a game, one can use the website https://www.paulspages.co.uk/bgreplay/bgsd.php.
+
+The **BG_Visualization** script allows you to pick to agents to compete and then stores the game in a .txt file.
+The text file is encoded in such way that the content can be copied into the left textfield of the website.
+
+## Changes in the game code from **Backgammon/Backgammon.py**
+
+### Move Legitimacy
+Added function for checking if the agent makes legit moves. 
+Increases the running time a lot but necassery for the competition.
+
+### Check if dice are the same before searching for possible single moves (minor change)
+in the *legal_moves* function the possible moves are found. 
+When there is only one possible move and the same number appears on both dice, it is useless to check possible moves for both dice. This should save a little time but the main reason for this change is to prevent confusing output in extreme cases that some teams were having trouble with.
+
+## Backgammon/Backgammon.py
 
 ## The board interpretation
 The game is set up in the **Backgammon.py** file. To play a game, simply run the program.
