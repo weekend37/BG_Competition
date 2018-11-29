@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 Backgammon - writing files for visualization
-Outputs .txt file: game_file.txt
-
+Outputs .txt file for that can be copied to the left textfield at
+https://www.paulspages.co.uk/bgreplay/bgsd.php
 @author Helgi
 """
 import warnings
@@ -292,10 +292,13 @@ def main():
 #            "randomAgent":randomAgent.action
     }
     agentNames = list(agents.keys())
+    if len(agentNames): 
+        print("warning: this file will only save a game between two players:")
+        print(agentNames[0], "and" ,agentNames[1])
     
     print("--------------------------------------------------\n")
     print("OK! Everything's ready.")
-    print("Playing one round...")
+    print("Playing one round between",agentNames[0], "and" ,agentNames[1])
     play_a_game(player1=agents[agentNames[0]],player2=agents[agentNames[1]], commentary = False)          
     print("saving game...")
     try:
