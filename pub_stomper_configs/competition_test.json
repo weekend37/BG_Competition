@@ -1,0 +1,23 @@
+{
+    "competitors": [
+        {
+            "cfg": "random"
+        },
+        {
+            "cfg": "nn_default",
+            "brain": "new"
+        },
+        {
+            "cfg": "nn_shallow",
+            "brain": "new"
+        },
+        {
+            "cfg": "nn_default",
+            "brain": "best"
+        },
+        {
+            "cfg": "nn_shallow",
+            "brain": "best"
+        }
+    ]
+}
