@@ -14,6 +14,9 @@ To visualize a game, one can use the website https://www.paulspages.co.uk/bgrepl
 The **BG_Visualization** script allows you to pick to agents to compete and then stores the game in a .txt file.
 The text file is encoded in such way that the content can be copied into the left textfield of the website.
 
+## Presentations
+The presentations given about the results and design of the top players can be found in the folder _Presentations_
+
 ## Changes in the game code from **Backgammon/Backgammon.py**
 
 ### Move Legitimacy
